@@ -1,21 +1,21 @@
 // 1) Objects defines a `recipes` object:
-  var recipes = {}
+var recipes = {}
   
 // 2) Objects updateObjectWithKeyAndValue(object, key, value) returns an object with the orignal key value 
 // 3) Objects updateObjectWithKeyAndValue(object, key, value) it does not modifythe original object, but 
 // 4) Objects destructivelyUpdateObjectWithKeyAndValue(object, key, value) updates `object` with the given 
   
-    function updateObjectWithKeyAndValue(object, key, value){
-    var newObj = Object.assign({},object,{[key]:value})
-    return newObj
-  }
+function updateObjectWithKeyAndValue(object, key, value){
+  var newObj = Object.assign({},object,{[key]:value})
+  return newObj
+}
   
-  function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
-    // object[key]=[value]
+function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
+  // object[key]=[value]
 
-    Object.assign(object,{[key]:value})
-    return object
-  }
+  Object.assign(object,{[key]:value})
+  return object
+}
   
 // 5) Objects deleteFromObjectByKey(object, key) deletes `key` from a clone of object and returns the new 
 function destructivelyDeleteFromObjectByKey(object, key) {
