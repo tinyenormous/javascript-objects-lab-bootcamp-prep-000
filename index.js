@@ -20,6 +20,7 @@
 // 5) Objects deleteFromObjectByKey(object, key) deletes `key` from a clone of object and returns the new 
 function destructivelyDeleteFromObjectByKey(object, key) {
   delete object.key
+  return object
 }
   // 6) Objects deleteFromObjectByKey(object, key) does not modify the original object (it is non-destructive):
   // 7) Objects destructivelyDeleteFromObjectByKey(object, key) returns object without the delete key/value pair
