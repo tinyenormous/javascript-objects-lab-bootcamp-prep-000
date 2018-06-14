@@ -5,8 +5,9 @@
   // 2) Objects updateObjectWithKeyAndValue(object, key, value) returns an object with the orignal key value 
   function updateObjectWithKeyAndValue(object, key, value) {
     // object[key]=[value]
-    return object
+
     Object.assign(object,{[key]:[value]})
+    return object
   }
   // 3) Objects updateObjectWithKeyAndValue(object, key, value) it does not modifythe original object, but 
   // 4) Objects destructivelyUpdateObjectWithKeyAndValue(object, key, value) updates `object` with the given 
