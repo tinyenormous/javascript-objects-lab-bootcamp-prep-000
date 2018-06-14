@@ -4,7 +4,8 @@
   
   // 2) Objects updateObjectWithKeyAndValue(object, key, value) returns an object with the orignal key value 
   function updateObjectWithKeyAndValue(object, key, value){
-    Object.assign({},object,{[key]:value})
+    var newObj = Object.assign({},object,{[key]:value})
+    return newObj
   }
   
   function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
