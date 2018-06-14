@@ -3,7 +3,7 @@
   var recipes = {}
   
   // 2) Objects destructivelyUpdateObjectWithKeyAndValue(object, key, value) returns an object with the orignal key value 
-  function destructivelyUpdateObjectWithKeyAndValue (object, key, value) {
+  function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
     // object[key]=[value]
 
     Object.assign(object,{[key]:[value]})
