@@ -6,7 +6,7 @@
   function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
     // object[key]=[value]
 
-    Object.assign(object,{[key]:[value]})
+    Object.assign(object,{[key]:value})
     return object
   }
   // 3) Objects updateObjectWithKeyAndValue(object, key, value) it does not modifythe original object, but 
